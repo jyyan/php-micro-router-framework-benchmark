@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 if [ $# -eq 0 ]; then
     # include framework list
@@ -12,16 +12,17 @@ for fw in $targets
 do
     if [ -d "frameworks/$fw" ]; then
         echo "***** $fw remove setup files *****"
-        cd "frameworks/$fw/_benchmark"
-        . "unistall.sh"
+        cd frameworks/$fw/_benchmark
+          . ./unistall.sh
         cd ..
         cd ..
     fi
 done
 
-cd "output"
+cd output
 echo "Remove log files"
 rm -rf *.log
+rm -rf *.log.old
 echo "Remove output files"
 rm -rf *.output
 cd ..

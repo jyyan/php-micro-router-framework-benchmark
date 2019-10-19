@@ -1,6 +1,6 @@
 #!/bin/sh
 
-base="http://0.0.0.0:1515/php-micro-router-framework-benchmark/frameworks"
+base="http://dev.jyyan.info/php-micro-router-framework-benchmark/frameworks"
 
 cd `dirname $0`
 
