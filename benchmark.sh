@@ -1,6 +1,6 @@
 #!/bin/sh
 
-base="http://localhost/php-micro-router-framework-benchmark/frameworks"
+base="http://0.0.0.0:1515/php-micro-router-framework-benchmark/frameworks"
 
 cd `dirname $0`
 
@@ -14,6 +14,6 @@ fi
 
 cd benchmarks
 
-sh hello_world.sh "$base"
+bash hello_world.sh "$base"
 
 php ../bin/show_results_table.php
