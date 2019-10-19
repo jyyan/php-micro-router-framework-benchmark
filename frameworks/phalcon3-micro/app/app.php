@@ -18,3 +18,4 @@ $app->notFound(function () use($app) {
     $app->response->setStatusCode(404, "Not Found")->sendHeaders();
     echo $app['view']->render('404');
 });
+require $_SERVER['DOCUMENT_ROOT'].'/php-micro-router-framework-benchmark/libs/output_data.php';

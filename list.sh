@@ -15,4 +15,8 @@ tipsy
 bearframework
 phalcon3-mvc
 phalcon3-micro
+laravel-5-2
+laravel-5-3
+lumen-5-0
+lumen-5-1
 "
